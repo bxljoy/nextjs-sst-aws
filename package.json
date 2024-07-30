@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "sst bind next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deployStaging": "sst deploy --stage staging",
+    "deploy": "sst deploy --stage production"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -17,6 +19,9 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
     "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7"
+    "tailwindcss": "^3.4.7",
+    "sst": "^2.43.4",
+    "aws-cdk-lib": "2.142.1",
+    "constructs": "10.3.0"
   }
 }
